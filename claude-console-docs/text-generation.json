@@ -1,0 +1,14 @@
+{
+  "url": "https://platform.claude.com/docs/en/build-with-claude/text-generation",
+  "title": "Text generation",
+  "section": "Building with Claude",
+  "slug": "text-generation",
+  "content": "# Text generation\n\nClaude excels in a wide range of text-based tasks. Claude has been trained to ingest code, prose, and other natural language inputs, and provide text outputs in response.\n\n---\n\nPrompts are best written as natural language queries as if you are instructing someone to do something, with the more detail the better. You can further improve your baseline prompt with [prompt engineering](/docs/en/build-with-claude/prompt-engineering/overview).\n\n---\n\n## Text capabilities and use cases\n\nClaude has a broad range of text-based capabilities, including but not limited to:\n| Capability                | This enables you to...                                                                                  |\n|:------------------------|:-----------------------------------------------------------------------------------------------------|\n| Text Summarization       | Distill lengthy content into key insights for executives, social media, or product teams.                |\n| Content Generation       | Craft compelling content from blog posts and emails to marketing slogans and product descriptions.       |\n| Data / Entity Extraction | Uncover structured insights from unstructured text like reviews, news articles, or transcripts.          |\n| Question Answering       | Build intelligent, interactive systems from customer support chatbots to educational AI tutors.          |\n| Text Translation         | Seamlessly communicate across languages in products, support, and content creation.                      |\n| Text Analysis & Recommendations | Understand sentiment, preferences, and patterns to personalize user experiences and offerings.         |\n| Dialogue and Conversation | Create engaging, context-aware interactions in games, virtual assistants, and storytelling apps.        |\n| Code Explanation & Generation | Accelerate development with instant code reviews, boilerplate generation, and interactive tutorials.     |\n\n---\n\n## Claude Cookbook\n\nDive into practical examples and hands-on tutorials with the collection of Jupyter notebooks.\n\n  \n\n  \n</CardGroup>\n\n## More Resources\n\nFrom crafting the perfect prompt to understanding API details, these resources can help.\n\n  \n</CardGroup>",
+  "headings": [
+    "Text generation",
+    "Text capabilities and use cases",
+    "Claude Cookbook",
+    "More Resources"
+  ],
+  "order": 5
+}

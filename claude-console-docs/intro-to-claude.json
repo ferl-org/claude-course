@@ -1,0 +1,15 @@
+{
+  "url": "https://platform.claude.com/docs/en/docs/intro-to-claude",
+  "title": "Intro to Claude",
+  "section": "Getting Started",
+  "slug": "intro-to-claude",
+  "content": "# Intro to Claude\n\nClaude is a highly performant, trustworthy, and intelligent AI platform built by Anthropic. Claude excels at tasks involving language, reasoning, analysis, coding, and more.\n\n---\n\n## Recommended path for new developers\n\nFollow these steps to go from zero to a working Claude integration.\n\n  \n  \n  \n</Steps>\n\n---\n\n## Develop with Claude\n\nAnthropic provides developer tools to help you build and scale applications with Claude.\n\n  \n  \n</CardGroup>\n\n---\n\n## Key capabilities\n\nClaude can assist with many tasks that involve text, code, and images.\n\n  \n</CardGroup>\n\n---\n\n## Support\n\n  \n</CardGroup>",
+  "headings": [
+    "Intro to Claude",
+    "Recommended path for new developers",
+    "Develop with Claude",
+    "Key capabilities",
+    "Support"
+  ],
+  "order": 1
+}

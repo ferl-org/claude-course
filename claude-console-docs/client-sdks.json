@@ -1,0 +1,17 @@
+{
+  "url": "https://platform.claude.com/docs/en/api/client-sdks",
+  "title": "Client SDKs",
+  "section": "API Reference",
+  "slug": "client-sdks",
+  "content": "# Client SDKs\n\nOfficial SDKs for building with the Claude API in Python, TypeScript, Java, Go, Ruby, C#, and PHP.\n\n---\n\nAnthropic provides official client SDKs in multiple languages to make it easier to work with the Claude API. Each SDK provides idiomatic interfaces, type safety, and built-in support for features like streaming, retries, and error handling.\n\n  \n  \n  \n  \n  \n  \n</CardGroup>\n\n## Quick installation\n\n</Tab>\n\n</Tabs>\n\n## Quick start\n\n## Platform support\n\nAll SDKs support multiple deployment options:\n\n| Platform | Description |\n|----------|-------------|\n| Claude API | Connect directly to Claude API endpoints |\n| [Amazon Bedrock](/docs/en/build-with-claude/claude-on-amazon-bedrock) | Use Claude through AWS |\n| [Google Vertex AI](/docs/en/build-with-claude/claude-on-vertex-ai) | Use Claude through Google Cloud |\n| [Microsoft Foundry](/docs/en/build-with-claude/claude-in-microsoft-foundry) | Use Claude through Microsoft Azure |\n\nSee individual SDK pages for platform-specific setup instructions.\n\n## Beta features\n\nAccess beta features using the `beta` namespace in any SDK:\n\nSee [Beta headers](/docs/en/api/beta-headers) for available beta features.\n\n## Requirements\n\n| SDK | Minimum Version |\n|-----|-----------------|\n| Python | 3.9+ |\n| TypeScript | 4.9+ (Node.js 20+) |\n| Java | 8+ |\n| Go | 1.23+ |\n| Ruby | 3.2.0+ |\n| C# | .NET Standard 2.0 |\n| PHP | 8.1.0+ |\n\n## GitHub repositories\n\n- [anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python)\n- [anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript)\n- [anthropic-sdk-java](https://github.com/anthropics/anthropic-sdk-java)\n- [anthropic-sdk-go](https://github.com/anthropics/anthropic-sdk-go)\n- [anthropic-sdk-ruby](https://github.com/anthropics/anthropic-sdk-ruby)\n- [anthropic-sdk-csharp](https://github.com/anthropics/anthropic-sdk-csharp)\n- [anthropic-sdk-php](https://github.com/anthropics/anthropic-sdk-php)",
+  "headings": [
+    "Client SDKs",
+    "Quick installation",
+    "Quick start",
+    "Platform support",
+    "Beta features",
+    "Requirements",
+    "GitHub repositories"
+  ],
+  "order": 31
+}

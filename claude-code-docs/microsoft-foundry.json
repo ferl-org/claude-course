@@ -1,0 +1,24 @@
+{
+  "url": "https://code.claude.com/docs/en/microsoft-foundry",
+  "title": "Claude Code on Microsoft Foundry",
+  "section": "Cloud Platforms",
+  "slug": "microsoft-foundry",
+  "content": "> ## Documentation Index\n> Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt\n> Use this file to discover all available pages before exploring further.\n\n# Claude Code on Microsoft Foundry\n\n> Learn about configuring Claude Code through Microsoft Foundry, including setup, configuration, and troubleshooting.\n\n## Prerequisites\n\nBefore configuring Claude Code with Microsoft Foundry, ensure you have:\n\n* An Azure subscription with access to Microsoft Foundry\n* RBAC permissions to create Microsoft Foundry resources and deployments\n* Azure CLI installed and configured (optional - only needed if you don't have another mechanism for getting credentials)\n\n## Setup\n\n### 1. Provision Microsoft Foundry resource\n\nFirst, create a Claude resource in Azure:\n\n1. Navigate to the [Microsoft Foundry portal](https://ai.azure.com/)\n2. Create a new resource, noting your resource name\n3. Create deployments for the Claude models:\n   * Claude Opus\n   * Claude Sonnet\n   * Claude Haiku\n\n### 2. Configure Azure credentials\n\nClaude Code supports two authentication methods for Microsoft Foundry. Choose the method that best fits your security requirements.\n\n**Option A: API key authentication**\n\n1. Navigate to your resource in the Microsoft Foundry portal\n2. Go to the **Endpoints and keys** section\n3. Copy **API Key**\n4. Set the environment variable:\n\n```bash  theme={null}\nexport ANTHROPIC_FOUNDRY_API_KEY=your-azure-api-key\n```\n\n**Option B: Microsoft Entra ID authentication**\n\nWhen `ANTHROPIC_FOUNDRY_API_KEY` is not set, Claude Code automatically uses the Azure SDK [default credential chain](https://learn.microsoft.com/en-us/azure/developer/javascript/sdk/authentication/credential-chains#defaultazurecredential-overview).\nThis supports a variety of methods for authenticating local and remote workloads.\n\nOn local environments, you commonly may use the Azure CLI:\n\n```bash  theme={null}\naz login\n```\n\n### 3. Configure Claude Code\n\nSet the following environment variables to enable Microsoft Foundry:\n\n```bash  theme={null}\n# Enable Microsoft Foundry integration\nexport CLAUDE_CODE_USE_FOUNDRY=1\n\n# Azure resource name (replace {resource} with your resource name)\nexport ANTHROPIC_FOUNDRY_RESOURCE={resource}\n# Or provide the full base URL:\n# export ANTHROPIC_FOUNDRY_BASE_URL=https://{resource}.services.ai.azure.com/anthropic\n```\n\n### 4. Pin model versions\n\nSet the model variables to match the deployment names you created in step 1:\n\n```bash  theme={null}\nexport ANTHROPIC_DEFAULT_OPUS_MODEL='claude-opus-4-6'\nexport ANTHROPIC_DEFAULT_SONNET_MODEL='claude-sonnet-4-6'\nexport ANTHROPIC_DEFAULT_HAIKU_MODEL='claude-haiku-4-5'\n```\n\nFor current and legacy model IDs, see [Models overview](https://platform.claude.com/docs/en/about-claude/models/overview). See [Model configuration](/en/model-config#pin-models-for-third-party-deployments) for the full list of environment variables.\n\n## Azure RBAC configuration\n\nThe `Azure AI User` and `Cognitive Services User` default roles include all required permissions for invoking Claude models.\n\nFor more restrictive permissions, create a custom role with the following:\n\n```json  theme={null}\n{\n  \"permissions\": [\n    {\n      \"dataActions\": [\n        \"Microsoft.CognitiveServices/accounts/providers/*\"\n      ]\n    }\n  ]\n}\n```\n\nFor details, see [Microsoft Foundry RBAC documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry).\n\n## Troubleshooting\n\nIf you receive an error \"Failed to get token from azureADTokenProvider: ChainedTokenCredential authentication failed\":\n\n* Configure Entra ID on the environment, or set `ANTHROPIC_FOUNDRY_API_KEY`.\n\n## Additional resources\n\n* [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry)\n* [Microsoft Foundry models](https://ai.azure.com/explore/models)\n* [Microsoft Foundry pricing](https://azure.microsoft.com/en-us/pricing/details/ai-foundry/)",
+  "headings": [
+    "Claude Code on Microsoft Foundry",
+    "Prerequisites",
+    "Setup",
+    "1. Provision Microsoft Foundry resource",
+    "2. Configure Azure credentials",
+    "3. Configure Claude Code",
+    "Enable Microsoft Foundry integration",
+    "Azure resource name (replace {resource} with your resource name)",
+    "Or provide the full base URL:",
+    "export ANTHROPIC_FOUNDRY_BASE_URL=https://{resource}.services.ai.azure.com/anthropic",
+    "4. Pin model versions",
+    "Azure RBAC configuration",
+    "Troubleshooting",
+    "Additional resources"
+  ],
+  "order": 38
+}

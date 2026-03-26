@@ -1,0 +1,15 @@
+{
+  "url": "https://platform.claude.com/docs/en/docs/build-with-claude/prompt-engineering/overview",
+  "title": "Prompt engineering overview",
+  "section": "Prompt Engineering",
+  "slug": "prompt-engineering-overview",
+  "content": "# Prompt engineering overview\n\n---\n\n## Before prompt engineering\n\nThis guide assumes that you have:\n1. A clear definition of the success criteria for your use case\n2. Some ways to empirically test against those criteria\n3. A first draft prompt you want to improve\n\nIf not, we highly suggest you spend time establishing that first. Check out [Define success criteria and build evaluations](/docs/en/test-and-evaluate/develop-tests) for tips and guidance.\n\n  \n</CardGroup>\n\n***\n\n## When to prompt engineer\n\n  This guide focuses on success criteria that are controllable through prompt engineering.\n  Not every success criteria or failing eval is best solved by prompt engineering. For example, latency and cost can be sometimes more easily improved by selecting a different model.\n\n***\n\n## How to prompt engineer\n\nAll prompting techniques — from clarity and examples to XML structuring, role prompting, thinking, and prompt chaining — are covered in [Prompting best practices](/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices). That's the living reference; start there.\n\nThe [Claude Console](/dashboard) also offers [prompting tools](/docs/en/build-with-claude/prompt-engineering/prompting-tools)—prompt generator, templates and variables, and prompt improver—to help you build and refine prompts quickly.\n\n***\n\n## Prompt engineering tutorial\n\nIf you're an interactive learner, you can dive into our interactive tutorials instead!\n\n  \n</CardGroup>",
+  "headings": [
+    "Prompt engineering overview",
+    "Before prompt engineering",
+    "When to prompt engineer",
+    "How to prompt engineer",
+    "Prompt engineering tutorial"
+  ],
+  "order": 21
+}

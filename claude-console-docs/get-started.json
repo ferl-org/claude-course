@@ -1,0 +1,14 @@
+{
+  "url": "https://platform.claude.com/docs/en/get-started",
+  "title": "Get started with Claude",
+  "section": "Getting Started",
+  "slug": "get-started",
+  "content": "# Get started with Claude\n\nMake your first API call to Claude and build a simple web search assistant.\n\n---\n\n## Prerequisites\n\n- An Anthropic [Console account](/)\n- An [API key](/settings/keys)\n\n## Call the API\n\n      \n    </Steps>\n  </Tab>\n\n  \n\n      \n\n      \n\n      \n    </Steps>\n  </Tab>\n\n  \n\n      \n\n      \n\n      \n    </Steps>\n  </Tab>\n\n  \n\n      \n\n      \n\n      \n    </Steps>\n  </Tab>\n</Tabs>\n\n## Next steps\n\nYou made your first API call. Next, learn the Messages API patterns you'll use in every Claude integration.\n\nOnce you're comfortable with the basics, explore further:\n\n  \n  \n</CardGroup>",
+  "headings": [
+    "Get started with Claude",
+    "Prerequisites",
+    "Call the API",
+    "Next steps"
+  ],
+  "order": 0
+}
